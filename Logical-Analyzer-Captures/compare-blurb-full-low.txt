@@ -1,0 +1,37 @@
+full:
+10101010 10101010 10101010 10101101 00110011
+01010011 01001010 11001011 01001100 11001101
+01010100 11010101 01010101
+
+00110011	<-- uniek voor commando
+01010010	<-- uniek voor commando
+10110100	<-- uniek voor commando
+
+10101010 10101011 01010101
+
+00110101	<-- checksum?
+
+
+
+low:
+10101010 10101010 10101010 10101101 00110011
+01010011 01001010 11001011 01001100 11001101
+01010100 11010101 01010101
+
+01010010	<-- uniek voor commando
+11001010	<-- uniek voor commando
+11010100	<-- uniek voor commando
+
+10101010 10101011 01010101
+
+01010101	<-- checksum?
+
+
+Hele bericht verzenden met:
+
+https://github.com/cybergibbons/Response_CC1150/blob/e4e69e2d63e39ac531db8cd668316840ce8af3dd/CC1150_Response.c
+
+http://www.geertlangereis.nl/Electronics/Pin_Change_Interrupts/PinChange_en.html
+
+OpenTherm Gateway
+97x75cm 

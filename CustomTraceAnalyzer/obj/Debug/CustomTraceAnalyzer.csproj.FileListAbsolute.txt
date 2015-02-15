@@ -1,0 +1,8 @@
+E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.exe.config
+E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.csprojResolveAssemblyReference.cache
+E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.exe
+E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.pdb
+E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\bin\Debug\CommandLine.dll
+E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\bin\Debug\CommandLine.xml
+E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.exe
+E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.pdb
