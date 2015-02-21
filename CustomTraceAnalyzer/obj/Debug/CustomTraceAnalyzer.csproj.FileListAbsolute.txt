@@ -6,3 +6,11 @@ E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomT
 E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\bin\Debug\CommandLine.xml
 E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.exe
 E:\HomeAutomation\Itho\Itho-library\Itho-library\Logical-Analyzer-traces\CustomTraceAnalyzer\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.pdb
+E:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.exe.config
+E:\GitHub\Itho-project\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.exe
+E:\GitHub\Itho-project\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.pdb
+E:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.exe
+E:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.pdb
+E:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CommandLine.dll
+E:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CommandLine.xml
+E:\GitHub\Itho-project\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.csprojResolveAssemblyReference.cache

@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Analyzers\CompareCommands.cs" />
     <Compile Include="Analyzers\ConvertToByteArray.cs" />
+    <Compile Include="Analyzers\GenerateCsvs.cs" />
     <Compile Include="Analyzers\IAnalyzer.cs" />
     <Compile Include="Analyzers\SupportClasses\CompareCommandsFile.cs" />
     <Compile Include="ArgumentOptions.cs" />

@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using CustomTraceAnalyzer.Analyzers.SupportClasses;
 using CustomTraceAnalyzer.Extensions;
 
@@ -19,15 +21,67 @@ namespace CustomTraceAnalyzer.Analyzers
         public void Analyze()
         {
             var bytes = ReadFiles();
+            var outputFileName1 = Path.Combine(DirectoryName, "CompareResults-Part1.csv");
+            var outputFileName2 = Path.Combine(DirectoryName, "CompareResults-Part2.csv");
 
-            var firstParts = bytes.Select(file => file.FirstPartBytes).ToList();
-            var secondParts = bytes.Select(file => file.FirstPartBytes).ToList();
-
-            CompareArrays(firstParts);
+            CheckArraysWithinFile(bytes);
+            WriteCsv(outputFileName1, true, bytes);
+            WriteCsv(outputFileName2, false, bytes);
         }
 
-        private void CompareArrays(List<byte[]> firstParts)
+        private void CheckArraysWithinFile(IEnumerable<CompareCommandsFile> bytes)
         {
+            var filesGrouped = bytes.GroupBy(file => file.FileName);
+            foreach (var group in filesGrouped)
+            {
+                var firstBytes = @group.Select(g => g.FirstPartBytes);
+                if (!CompareArrays(firstBytes))
+                {
+                    Console.WriteLine("First bytes differ in file: " + group.Key);
+                }
+
+                var secondBytes = @group.Select(g => g.SecondPartBytes);
+                if (!CompareArrays(secondBytes))
+                {
+                    Console.WriteLine("Second bytes differ in file: " + group.Key);
+                }
+            }
+        }
+
+
+        private void WriteCsv(string outputFileName, bool firstParts, List<CompareCommandsFile> compareCommandsFiles)
+        {
+            using (var file = File.CreateText(outputFileName))
+            {
+                var headerFileNames = compareCommandsFiles.Where(ccf => ccf.BlurbIndex == 0).Select(ccf => Path.GetFileName(ccf.FileName)).ToArray();
+                string header = String.Join(",", headerFileNames);
+                file.WriteLine(header);
+
+                var arrays = compareCommandsFiles
+                    .Where(ccf => ccf.BlurbIndex == 0) // only output the first blurb of each part, since we compared the other blurbs and they are the same
+                    .Select(ccf => firstParts ? ccf.FirstPartBytes : ccf.SecondPartBytes);
+
+                var lines = new string[arrays.First().Length];
+
+                foreach (var array in arrays)
+                {
+                    for (int index = 0; index < array.Length; index++)
+                    {
+                        lines[index] += "," + array[index];
+                    }
+                }
+
+                foreach (var line in lines)
+                {
+                    file.WriteLine(line.Trim(new [] {','}));
+                }
+            }
+        }
+
+        private bool CompareArrays(IEnumerable<byte[]> firstParts)
+        {
+            bool result = true;
+
             var firstArray = firstParts.First();
             var otherArrays = firstParts.Skip(1);
 
@@ -35,9 +89,12 @@ namespace CustomTraceAnalyzer.Analyzers
             {
                 if (!CompareArray(firstArray, secondArray))
                 {
-                    
+                    result = false;
+                    break;
                 }
             }
+
+            return result;
         }
 
         private bool CompareArray<T>(T[] one, T[] two)
