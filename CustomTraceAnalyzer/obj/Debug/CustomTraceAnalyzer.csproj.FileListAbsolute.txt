@@ -14,3 +14,11 @@ E:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.pdb
 E:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CommandLine.dll
 E:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CommandLine.xml
 E:\GitHub\Itho-project\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.csprojResolveAssemblyReference.cache
+C:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.exe.config
+C:\GitHub\Itho-project\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.exe
+C:\GitHub\Itho-project\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.pdb
+C:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.exe
+C:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CustomTraceAnalyzer.pdb
+C:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CommandLine.dll
+C:\GitHub\Itho-project\CustomTraceAnalyzer\bin\Debug\CommandLine.xml
+C:\GitHub\Itho-project\CustomTraceAnalyzer\obj\Debug\CustomTraceAnalyzer.csprojResolveAssemblyReference.cache
